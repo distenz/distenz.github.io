@@ -2,3 +2,12 @@
 ---
 
 @import "{{ site.theme }}";
+
+$body: #eee;
+
+html {
+    background-color: #121212;
+}
+html, a {
+    color: $body;
+}
