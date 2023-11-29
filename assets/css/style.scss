@@ -2,12 +2,11 @@
 ---
 
 @import "{{ site.theme }}";
-
-$body: #eee;
-
-html {
+body {
     background-color: #121212;
 }
-html, a {
-    color: $body;
+body, h1, h2, h3, h4, h5, h6 {
+    color: #eeeeee;
 }
+
+
