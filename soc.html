@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+            * {
+                box-sizing: border-box;
+            }
             body {
                 color: #eee;
                 background-color: #212121;
@@ -16,6 +19,9 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+
+                margin: 0;
+                padding: 1rem;
             }
             main {
                 display: flex;
@@ -23,7 +29,8 @@
                 justify-content: start;
                 align-items: start;
 
-                inline-size: 40em;
+                max-inline-size: 40em;
+                inline-size: 100%;
             }
             #home {
                 position: sticky;
