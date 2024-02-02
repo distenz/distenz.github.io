@@ -32,9 +32,20 @@
                 max-inline-size: 40em;
                 inline-size: 100%;
             }
+            a {
+                color: #eee;
+                &:visited {
+                   color: #FF7043;
+                }
+            }
             #home {
                 position: sticky;
                 top: 0;
+            }
+            blockquote {
+                border-left: 1em solid #ccc;
+                margin-left: 1em;
+                padding-left: 1em;
             }
         </style>
     </head>
@@ -67,19 +78,17 @@
             </ul>
 
             <h2 id="internal-requirement-coherence-of-state-and-behavior-">Internal requirement: &quot;coherence of state and behavior&quot;</h2>
-            <blockquote>
+            <blockquote cite="https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html">
                 <p>The internal requirement is one of coherence: the knowledge must support the 
                 abilities and the abilities must enable us to improve the knowledge.</p>
             </blockquote>
             <ul>
-                <li>
-                    <p>I understand </p>
-                    <ul>
-                        <li>coherence as literary &quot;being connected to&quot;</li>
-                        <li>knowledge as state</li>
-                        <li>abilities as behavior</li>
-                    </ul>
-                </li>
+                <li>I understand</li>
+                <ul>
+                    <li>coherence as literary &quot;being connected to&quot;</li>
+                    <li>knowledge as state</li>
+                    <li>abilities as behavior</li>
+                </ul>
                 <li>Behavior references state as reading or writing it</li>
                 <li>Behavior is connected to state or other behavior by shared input/output shapes</li>
                 <li>If a shape is from, or for the module interface</li>
