@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                color: #eee;
+                background-color: #212121;
+
+                block-size: 100%;
+                inline-size: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+
+                inline-size: 40em;
+            }
+            #home {
+                position: sticky;
+                top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="home" href="./index.html">Home</a>
+        <main>
+            <h1 id="separation-of-concerns">Separation of Concerns</h1>
+
+            <a href="https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html" target="_blank">Original essey of Dijkstra</a>
+            <blockquote>
+                <p>&quot;Modularization&quot;, a reference to the way in which the knowledge in the world 
+                has been arranged, is probably the best concise answer.</p>
+                <p>For the separation to be meaningful, we have also an internal and an external 
+                requirement.</p>
+            </blockquote>
+
+            <h2 id="external-requirement-thin-interface-">External requirement: &quot;thin interface&quot;</h2>
+
+            <blockquote>
+                <p>the more self-supporting such an intellectual subuniverse, the less detailed 
+                the knowledge that its practitioners need about other areas of human 
+                endeavour, the greater its viability.</p>
+            </blockquote>
+
+            <ul>
+                <li>The purpose of the domain of knowledge is to provide useful abilities</li>
+                <li>It takes time and energy to know a domain</li>
+                <li>Therefore there is a cost to the abilities</li>
+                <li>The thin interface is the minimum input information to a given domain to be able to gain a or a desired set of abilities from said domain.</li>
+            </ul>
+
+            <h2 id="internal-requirement-coherence-of-state-and-behavior-">Internal requirement: &quot;coherence of state and behavior&quot;</h2>
+            <blockquote>
+                <p>The internal requirement is one of coherence: the knowledge must support the 
+                abilities and the abilities must enable us to improve the knowledge.</p>
+            </blockquote>
+            <ul>
+                <li>
+                    <p>I understand </p>
+                    <ul>
+                        <li>coherence as literary &quot;being connected to&quot;</li>
+                        <li>knowledge as state</li>
+                        <li>abilities as behavior</li>
+                    </ul>
+                </li>
+                <li>Behavior references state as reading or writing it</li>
+                <li>Behavior is connected to state or other behavior by shared input/output shapes</li>
+                <li>If a shape is from, or for the module interface</li>
+            </ul>
+        </main>
+    </body>
+</html>
